@@ -2,9 +2,18 @@ package com.tnsif.encapsulation;
 
 
 public class Person {
-
 	private String name;
 	private int id;
+	
+	public Person() {
+		this.id=101;
+		this.name="Ram";
+	}
+	
+	public Person(String name, int id) {
+		this.name = name;
+		this.id = id;
+	}
 
 	public String getName() {
 		return name;
